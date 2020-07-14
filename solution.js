@@ -109,12 +109,13 @@ console.log(score.reduce(total, num) { return total - num })
     //
 console.log(score.filter(i => i % 2 === 0).reduce((a, b) => a += b));
 //first name
-console.log(inventors.map((name, index) => name.split(' ').reduce((a) => (a))))
+console.log(inventors.map((name) => name.split(' ').reduce((a) => (a))))
     //
 console.log(inventors.some((name) => (name.includes('a'))))
     // every include
 console.log(inventors.every((name) => (name.toLowerCase().includes("e"))))
     //Does every inventor have first name that's longer than 4 characters
+console.log(inventors.map((name) => name.split(' ').reduce((a, b) => (a))).every((x) => (x.length >= 4)))
 
 // //
 // Find the inventor that has a middle name.
