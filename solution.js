@@ -119,6 +119,8 @@ console.log(inventors.map((name) => name.split(' ').reduce((a, b) => (a))).every
 
 // //
 // Find the inventor that has a middle name.
+console.log(inventors.find((name) => name.split(' ').length >= 3))
+
 // Bonus: Return a new array, that only has inventors without a middle name. (Hint: think about splice, if you use findIndex. But you may also use another of the methods you've learned about above.)
 
 // Find the number divisible by 7.
