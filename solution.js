@@ -105,8 +105,9 @@ console.log(inventors.sort(function(a, b) {
 }));
 
 //reduce
-console.log(score.reduce(total, num) { return total - num })
-    //
+console.log(score.reduce((total, num) { return total - num }))
+
+//
 console.log(score.filter(i => i % 2 === 0).reduce((a, b) => a += b));
 //first name
 console.log(inventors.map((name) => name.split(' ').reduce((a) => (a))))
